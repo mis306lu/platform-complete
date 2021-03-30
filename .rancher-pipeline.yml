@@ -4,16 +4,11 @@ stages:
       - publishImageConfig:
           dockerfilePath: ./docker/Dockerfile
           buildContext: ./
-          tag: docker.dev.folio.org/platform-complete:falcon-perf-r1-${CICD_EXECUTION_SEQUENCE}
+          tag: docker.dev.folio.org/platform-complete:perf-latest
           pushRemote: true
           registry: docker.dev.folio.org
         env:
-          PLUGIN_BUILD_ARGS_FROM_ENV: OKAPI_URL, TENANT_ID
-        envFrom:
-          - sourceName: tenant-config
-            sourceKey: TENANT_ID
-          - sourceName: tenant-config
-            sourceKey: OKAPI_URL
+          PLUGIN_BUILD_ARGS_FROM_ENV: perf-okapi.ci.folio.org, fs09000000
         cpuRequest: 100m
         cpuLimit: 1500m
         memoryRequest: 100Mi
