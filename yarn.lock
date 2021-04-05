@@ -1383,10 +1383,9 @@
     "@folio/plugin-find-instance" "^5.0.0"
     "@folio/quick-marc" "^3.0.0"
 
-"@folio/invoice@>=1.0.0":
-  version "2.3.1000428"
-  resolved "https://repository.folio.org/repository/npm-folioci/@folio/invoice/-/invoice-2.3.1000428.tgz#b0832af8a7f14ef7ff431bbc8ba574afaf8592ad"
-  integrity sha512-Lu0o+QmXX1iQEJ5qCrLgLad6lXqFp1O9VlKEol1Tv9qVikmGfdPupFh4OuoIJgrNjhnSD3VsfS3W+utYFeXsOA==
+"@folio/invoice@git://github.com/folio-org/ui-invoice.git#test-print-voucher":
+  version "2.3.0"
+  resolved "git://github.com/folio-org/ui-invoice.git#de7479bda7c14ab2d48383a5c927fe01ff8f672f"
   dependencies:
     "@folio/stripes-acq-components" "~2.3.0"
     file-saver "^2.0.0"
@@ -1395,10 +1394,12 @@
     lodash "^4.17.11"
     prop-types "^15.6.0"
     query-string "^6.7.0"
+    react-fast-compare "^3.2.0"
     react-final-form "^6.3.0"
     react-final-form-arrays "^3.1.0"
     react-final-form-listeners "^1.0.2"
     react-router-prop-types "^1.0.4"
+    react-to-print "^2.12.3"
     redux-form "^8.3.0"
   optionalDependencies:
     "@folio/plugin-find-organization" "*"
@@ -1483,22 +1484,24 @@
     react-hot-loader "^4.12.21"
     react-router-prop-types "^1.0.4"
 
-"@folio/orders@>=1.1.0":
-  version "2.3.1000997"
-  resolved "https://repository.folio.org/repository/npm-folioci/@folio/orders/-/orders-2.3.1000997.tgz#55f8a142ac36bee9773010593bbb3dc2453d41e6"
-  integrity sha512-BNXIjJqPTIrDuegKKtrmVyOehIL+VUH9a0aCMQ10PbSKcmT6qg9DCQ68OHWGSic+vNAksHFmRjsappscONoIlA==
+"@folio/orders@git://github.com/folio-org/ui-orders.git#UIOR-675-wip":
+  version "2.3.0"
+  resolved "git://github.com/folio-org/ui-orders.git#5fae2a66f1bf3149e150b7dec2ae354d2b34c9d8"
   dependencies:
     "@folio/plugin-find-po-line" "^2.3.0"
     "@folio/stripes-acq-components" "~2.3.0"
     classnames "^2.2.5"
     final-form "^4.19.1"
+    html-to-react "^1.4.5"
     lodash "^4.17.19"
     prop-types "^15.6.2"
     query-string "^6.1.0"
+    react-fast-compare "^3.2.0"
     react-final-form "^6.4.0"
     react-final-form-arrays "^3.1.1"
     react-hot-loader "^4.3.12"
     react-router-prop-types "^1.0.4"
+    react-to-print "^2.12.3"
     redux-form "^8.3.0"
   optionalDependencies:
     "@folio/plugin-find-instance" "*"
@@ -7540,7 +7543,7 @@ html-minifier-terser@^5.0.1:
     relateurl "^0.2.7"
     terser "^4.6.3"
 
-html-to-react@^1.3.3:
+html-to-react@^1.3.3, html-to-react@^1.4.5:
   version "1.4.5"
   resolved "https://repository.folio.org/repository/npm-ci-all/html-to-react/-/html-to-react-1.4.5.tgz#59091c11021d1ef315ef738460abb6a4a41fe1ce"
   integrity sha512-KONZUDFPg5OodWaQu2ymfkDmU0JA7zB1iPfvyHehTmMUZnk0DS7/TyCMTzsLH6b4BvxX15g88qZCXFhJWktsmA==
@@ -11813,7 +11816,7 @@ react-titled@^1.0.0, react-titled@^1.0.1:
   dependencies:
     prop-types "^15.5.8"
 
-react-to-print@^2.3.2, react-to-print@^2.9.0:
+react-to-print@^2.12.3, react-to-print@^2.3.2, react-to-print@^2.9.0:
   version "2.12.3"
   resolved "https://repository.folio.org/repository/npm-ci-all/react-to-print/-/react-to-print-2.12.3.tgz#1468f2c7ee92c097a80da29150352cd72c8906f2"
   integrity sha512-JpjPh2WDo2nraxgyt5p3kHMMZZDs52uDcgJJi7BbgmE/j3v1RcTtr3s3uvDk82WRjLWggDm1Ro2J9/L9qkH4cQ==
